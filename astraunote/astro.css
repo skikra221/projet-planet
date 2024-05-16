@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.image {
+    z-index: -1;
+    background-image: url('astronaut.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+#info-box {
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100; 
+}
+
+
+.interactive-dot {
+    cursor: pointer;
+    transition: fill 0.2s ease-in-out;
+}
+
+.interactive-dot:hover {
+    fill: blue;
+}
+
+.icon a {
+    color: #C0C0C0;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 120px;
+}
+
+.header2 a {
+    font-size: 40px;
+    padding: 0.25em;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+

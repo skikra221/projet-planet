@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylelog.css" />
+  <!--FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bebas+Neue&family=Jolly+Lodger&display=swap" rel="stylesheet" />
+  <!--icon  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <title>Login Signin</title>
+</head>
+<body>
+  <div class="image">
+    <div class="header">
+      <div class="icon">
+        <a href="../main/main.html">planet</a>
+        <div class="header2">
+          <a href="../planet/planet.html" class="planet">planet</a>
+          <a href="../stars/stars.html" class="star">star</a>
+          <a href="../aboutus/about.html" class="about">about us</a>
+          <a href="../astraunote/astro.html">astronote</a>
+          <a href="../log/log.html" class="log">login/signin</a>
+        </div>
+      </div>
+      <div class="main">
+        <div class="header23">
+          <div class="wrapper">
+            <form id="loginForm" action="../main/main.html" onsubmit="return loginUser()">
+              <h1>Login</h1>
+              <div class="input-box">
+                <input type="text" id="loginUsername" placeholder="Username" required />
+                <i class="bx bxs-user"></i>
+              </div>
+              <div class="input-box">
+                <input type="password" id="loginPassword" placeholder="Password" required />
+                <i class="bx bxs-lock-alt"></i>
+                <button type="button" onclick="togglePasswordVisibility('loginPassword')">
+                  <i class="bx bx-show-alt"></i>
+                </button>
+              </div>
+              <button type="submit" class="btn">Login</button>
+            
+              <p id="loginError" class="error"></p>
+            </form>
+          </div>
+        </div>
+        <div class="header24" >
+          <div class="wrapper">
+            <form id="signInForm" onsubmit="return signInUser()">
+              <h1>Sign In</h1>
+              <div class="input-box">
+                <input type="text" id="signInUsername" placeholder="Username" required />
+                <i class="bx bxs-user"></i>
+              </div>
+              <div class="input-box">
+                <input type="password" id="signInPassword" placeholder="Password" required />
+                <i class="bx bxs-lock-alt"></i>
+                <button type="button" onclick="togglePasswordVisibility('signInPassword')">
+                  <i class="bx bx-show-alt"></i>
+                </button>
+              </div>
+              <button type="submit" class="btn">Sign In</button>
+              <p id="signInError" class="error"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

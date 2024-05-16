@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image {
+    z-index: -1;
+    background-image: url('17.jpg'); 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+}
+.icon   {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.icon a {
+    color   : white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 100; 
+}
+.lktaba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+    justify-content: space-between;
+}
+.l3onwan{
+    font-size: 48px;
+    justify-content: center;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.lktaba2{
+    font-size: 25px;
+    display: flex;
+
+    justify-content: center;
+   width: 50%;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}

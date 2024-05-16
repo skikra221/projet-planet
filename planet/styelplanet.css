@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.image {
+    z-index: -1;
+    background-image: url('10.jpg'); 
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.option > a {
+    text-decoration: none;
+    margin: 20px;
+}
+
+.option > a > div {
+    position: relative;
+    display: flex;
+    width: 300px; 
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.option > a > div img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.icon a {
+    color: rgb(160, 160, 168);
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 100;    
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header2 {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 120px;
+}
+
+.header2 a {
+    font-size: 40px;
+    padding: 0.25em;
+}
+
+.header {
+    width: 100%;
+}
+.option > a > div span {
+    padding: 10px; 
+    border-radius: 0 0 10px 10px; 
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white;
+
+}
