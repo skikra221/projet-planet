@@ -9,10 +9,7 @@ function togglePasswordVisibility(passwordFieldId) {
     }
   }
   
-  function showSignInForm() {
-    document.getElementById('loginForm').style.display = 'none';
-    document.getElementById('signInForm').style.display = 'block';
-  }
+ 
   
   function loginUser() {
     var username = document.getElementById('loginUsername').value;
@@ -41,10 +38,6 @@ function togglePasswordVisibility(passwordFieldId) {
     return true; 
 }
 
-  function showLoginForm() {
-    document.getElementById('signInForm').style.display = 'none';
-    document.getElementById('loginForm').style.display = 'block';
-  }
   
   function signInUser() {
     var username = document.getElementById('signInUsername').value;
@@ -65,12 +58,12 @@ function togglePasswordVisibility(passwordFieldId) {
       }
     }
     if (username.length <=8 ){
-        signInError.textContent = 'Username must  contain at least 8 char.';
+        signInError.textContent = 'Username must  contain at least 9 char.';
         return false;
     }
     
     if (password.length <=8 ){
-        signInError.textContent = 'Password must  contain at least 8 char.';
+        signInError.textContent = 'Password must  contain at least 9 char.';
         return false;
     }
     

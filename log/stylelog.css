@@ -49,7 +49,7 @@ body, html {
   
   
   
-  .wrapper{
+  .box{
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -59,15 +59,15 @@ body, html {
     padding: 30px 40px;
     
   }
-  .wrapper h1{
+  .box h1{
     font-size: 36px;
     text-align: center;
     
   }
-  .wrapper form{
+  .box form{
     width: 100%;
   }
-  .wrapper .input-box{
+  .box .input-box{
     position: relative;
     width: 100%;
     height: 50px;
@@ -98,13 +98,13 @@ body, html {
     font-size: 20px;
   
   }
-  .wrapper{
+  .box{
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: 15px 20px -15px;
   }
-  .wrapper .btn{
+  .box .btn{
     width: 100%;
     height: 45px;
     background: #fff;
